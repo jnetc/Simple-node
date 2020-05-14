@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Vue",
+    "price": "20.5",
+    "image": "https://miro.medium.com/max/2000/1*oZqGznbYXJfBlvGp5gQlYQ.jpeg",
+    "id": "80bb39b55910297435de"
+  },
+  {
+    "title": "Angular",
+    "price": "10.5",
+    "image": "https://miro.medium.com/max/1400/1*P7x-_0XfQz6CVmMY_QAv0w.png",
+    "id": "6a8991ba55c97c8d7a1e"
+  },
+  {
+    "title": "React",
+    "price": "12.6",
+    "image": "https://miro.medium.com/max/1400/0*i_u0nZ0Dd0UtWKsM.png",
+    "id": "f92b59131d09b201d2c9"
+  }
+]
