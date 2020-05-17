@@ -1,15 +1,13 @@
-const express = require('express')
+const express = require('express');
 
-const router = express.Router()
-
+const router = express.Router();
 
 router.get('/', (req, res) => {
   res.render('index', {
     body: 'Hello fron handlebars',
     title: 'Main page',
-    isHome: true
-  })
-})
+    isHome: true,
+  });
+});
 
-
-module.exports = router
+module.exports = router;

@@ -1,0 +1,34 @@
+<h1>Bascket</h1>
+{{#if items.length}}
+<table id="card">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th style="text-align: right;">Amount</th>
+      <th style="text-align: right;">Price</th>
+      <th style="text-align: right;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each items}}
+    <tr>
+      <td>{{courseId.title}}</td>
+      <td style="text-align: right;">{{count}}</td>
+      <td style="text-align: right;">{{courseId.price}}</td>
+      <td style="display: flex; justify-content: flex-end;">
+        <form method="post" action="/cart/remove">
+          <input type="hidden" name="id" value="{{courseId._id}}">
+          <button class="btn waves-effect waves-light">delete</button>
+        </form>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<p><strong>Total</strong>
+  <span class="price">
+    {{total}}
+  </span></p>
+{{else}}
+<h4>Empty</h4>
+{{/if}}
