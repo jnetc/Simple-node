@@ -25,10 +25,16 @@
     {{/each}}
   </tbody>
 </table>
-<p><strong>Total</strong>
-  <span class="price">
-    {{total}}
-  </span></p>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+  <p><strong>Total</strong>
+    <span class="price">
+      {{total}}
+    </span></p>
+  <form action="/order" method="post">
+    <button type="submit" class="btn waves-effect waves-light">Order</button>
+  </form>
+</div>
 {{else}}
 <h4>Empty</h4>
 {{/if}}

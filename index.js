@@ -9,10 +9,11 @@ const {
 } = require('@handlebars/allow-prototype-access');
 
 // Import routers
-const routerHome = require('./router/home');
+const routerHome    = require('./router/home');
 const routerCourses = require('./router/courses');
-const routerAdd = require('./router/add');
-const routerCart = require('./router/cart');
+const routerAdd     = require('./router/add');
+const routerCart    = require('./router/cart');
+const routerOrder   = require('./router/order');
 
 // Import MOdel
 const User = require('./models/user');
@@ -51,6 +52,7 @@ app.use(routerHome);
 app.use('/courses', routerCourses);
 app.use('/add', routerAdd);
 app.use('/cart', routerCart);
+app.use('/order', routerOrder);
 
 async function start() {
   const PORT = process.env.PORT || 3000;
